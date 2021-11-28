@@ -1,0 +1,6 @@
+Version
+fontawesome-pro-5.15.1-web
+
+Owner
+U Tin Htut Aung (CEO)
+Data Land Technology Co.,Ltd

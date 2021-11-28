@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="libs/fontawesomepro/css/all.min.css" />
+</head>
+<body>
+    <h1>Welcome From Pig Dice Game</h1>
+    <p class="target">
+        Target Scores : 
+        <input type="radio" class="targeting" id="tscore1" name="t_score" value="20">
+        <label for="tscore1">20</label>
+        <input type="radio" class="targeting" id="tscore2" name="t_score" value="50">
+        <label for="tscore2">50</label>
+        <input type="radio" class="targeting" id="tscore3" name="t_score" value="100">
+        <label for="tscore2">100</label>
+    </p>
+    <p class="targetedScore">0</p>
+    <div class="container">
+       
+        <div class="p1 active" >
+            <div class="player" id="play1">
+                Player 1
+
+            </div>
+            <img src="img/pig2.png" class="pig" id="pigPlayer1" alt="Player1" >
+            <div class="count" id="count1">0</div>
+
+            <div class="current1">
+                <div class="cs1">Current Scores</div>
+                <div class="score" id="score1">0</div>
+            </div>
+        </div>
+
+       <div class="btn">
+
+        <button class="btn-new">
+            <i class="far fa-plus-circle"></i>
+            New Game
+        </button>
+
+         <img src="img/D2.png" class="dice" alt="Dice" >
+     
+        <button class="btn-roll">
+            <i class="fad fa-sync-alt"></i>
+            Roll Dice
+        </button>
+        <button class="btn-hold">
+            <i class="fal fa-pause"></i>
+            Hold
+        </button>
+        </div>
+
+
+        <div class="p2">
+            <div class="player" id="play2">
+                Player 2
+                <span class="win2"></span>
+            </div>
+            <img src="img/pig1.png" class="pig" id="pigPlayer2" alt="Player2">
+            <div class="count" id="count2">0</div>
+            <div class="current2">
+                <div class="cs2">Current Scores</div>
+                <div class="score" id="score2">0</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js" ></script>
+</body>
+</html>

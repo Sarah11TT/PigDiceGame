@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+   
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100vh;
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    /* display: flex; */
+   
+    overflow: hidden;
+    font-family: 'Zen Kurenaido', sans-serif;
+    /* flex-direction: row; */
+}
+.targeting{
+    cursor: pointer;
+}
+.targetedScore{
+    color: #da6337;
+    font-size: 40px;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    height: 62%;
+    /* background-image: linear-gradient(to right, #64ebb6, #7cca98, #82ab82, #7d8d74, #6f716b);  */
+    /* background-color: #fff; */
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px #50717b;
+    color: rgb(29, 27, 25);
+    display: flex;
+    justify-content: space-evenly;
+    margin:50px auto;
+    position: relative;
+    
+   
+    
+}
+.p1{
+    width: 50%;
+    flex-direction: column;
+    background-color: #75a5a3;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+
+.p2{
+    width: 50%;
+    flex-direction: column;
+    background-color: #75a5a3;
+    border-top-right-radius:30px ;
+    border-bottom-right-radius: 30px;
+  
+}
+.active{
+    background-color: #8ecccc;
+
+}
+
+
+
+.btn{
+    
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    margin-left: 10px;
+    
+}
+
+
+.player{
+    font-size: 30px;
+    font-weight:900px;
+    text-transform: uppercase;
+    margin: 10px;
+    position: relative;
+   
+   
+}
+
+.active .player{
+    font-weight: 900px;
+    font-style: italic;
+    font-size: 35px;
+}
+
+
+.count{
+    font-size: 4rem;
+    color: #da6337;
+}
+
+.pig,
+.dice{
+    width: 3rem;
+    height: 3rem;
+}
+
+.pig{
+    margin-top: 10px;
+}
+
+.dice{
+    margin-top: 60px;
+    margin-left: 22px;
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: rotate(360deg);
+    
+}
+
+
+
+
+.current1,
+.current2{
+    background-color: #3a5153;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.score{
+    color: #da6337;
+    font-size: 30px;
+}
+
+.btn-roll{
+   background: none;
+   border: none;
+   
+   font-family: 'Zen Kurenaido', sans-serif;
+   font-size: 18px;
+   margin-left: 0px;
+   margin-top: 40px;
+   text-transform: uppercase;
+   text-shadow: 0px 4px 6px #7c3920;
+   cursor: pointer;  
+}
+.btn-new{
+    background: none;
+   border: none;
+   font-family: 'Zen Kurenaido', sans-serif;
+   font-size: 20px;
+   margin-left: -20px;
+   margin-top: 60px;
+   text-transform: uppercase;
+   text-shadow: 0px 4px 6px #7c3920;
+   cursor: pointer;  
+}
+.btn-winNew{
+    background: none;
+    border: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 20px;
+    margin-left: -20px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 6px #7c3920;
+    cursor: pointer;  
+}
+
+.btn-hold{
+    background: none;
+    border: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+   font-size: 20px;
+   margin-left: -20px;
+   margin-top: 60px;
+   text-transform: uppercase;
+   text-shadow: 0px 4px 6px #7c3920;
+   cursor: pointer;  
+
+}
+
+.btn-new:hover,
+.btn-hold:hover,
+.btn-roll:hover
+{
+    transform: scale(0.8);
+}
+
+.btn-hold:disabled,
+.btn-roll:disabled{
+    transform: scale(1);
+    cursor: not-allowed;
+    pointer-events: all !important;
+    
+}
+
+
+.far, .fal, .fad{
+    color: #da6337;
+    
+}
+.btn-roll{
+    margin-top: 80px;
+}
+.btn-hold{
+    margin-top: 20px;
+   margin-left: 4px;
+   font-size: 22px;
+  
+   
+}
+.winner{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background:url('../img/celebration.png'),linear-gradient(to left, #e6eef2, #92af9a, #c3dbc9); 
+    background-repeat: no-repeat;
+    color: #450000;
+    font-size: 50px;
+    text-align: center;
+   
+    text-shadow:  0px 4px 6px #7c3920;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:414px)  {
+    .targetedScore{
+        font-size: 30px;
+        margin-top: -20px;
+    }
+     .container{
+        height:65% ;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .btn {
+        width: 30%;
+        flex-basis: 50%;
+        
+     
+    }
+    .dice{ 
+        margin-left:1.2rem;
+       
+    }
+    .btn-roll{
+        font-size: 14px;
+        width: 140px;
+        margin-left: -20px;
+        margin-top: 140px;
+    }
+    .btn-new{
+        font-size: 16px;
+        width: 140px;
+        /* margin-left: 16px; */
+        margin-top: 70px;
+    }
+    .btn-winNew{
+        font-size: 16px;
+        width: 140px;
+        /* margin-left: 16px; */
+        margin-top: 70px;
+    }
+    .btn-hold{
+        font-size: 18px;
+        width: 140px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+  
+    
+  } 
